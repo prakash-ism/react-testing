@@ -12,7 +12,9 @@ export const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const { data } = await axios.get('https://jsonplaceholder.typicode.com/users/1');
+      const { data } = await axios.get(
+        'https://jsonplaceholder.typicode.com/users/1'
+      );
       setUser(data);
     } catch (error) {
       setError(true);
@@ -39,7 +41,10 @@ export const Login = () => {
         <button disabled={!username || !password} onClick={handleClick}>
           {loading ? 'please wait' : `Login`}
         </button>
-        <span data-testid="error" style={{ visibility: error ? 'visible' : 'hidden' }}>
+        <span
+          data-testid="error"
+          style={{ visibility: error ? 'visible' : 'hidden' }}
+        >
           Error message
         </span>
       </form>

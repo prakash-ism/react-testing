@@ -15,7 +15,9 @@ describe('Application', () => {
     });
     expect(sectionHeading).toBeInTheDocument();
 
-    const parElement = screen.getByText((content) => content.startsWith('All fields'));
+    const parElement = screen.getByText((content) =>
+      content.startsWith('All fields')
+    );
     expect(parElement).toBeInTheDocument();
 
     const closeElement = screen.getByTitle(/close/);

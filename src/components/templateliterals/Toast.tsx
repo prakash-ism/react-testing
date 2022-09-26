@@ -3,7 +3,10 @@ type VerticalPosition = 'left' | 'center' | 'bottom';
 
 type ToastProps = {
   position:
-    | Exclude<`${HorizontalPosition}-${VerticalPosition}`, 'center-center' | 'left-left'>
+    | Exclude<
+        `${HorizontalPosition}-${VerticalPosition}`,
+        'center-center' | 'left-left'
+      >
     | 'center';
 };
 

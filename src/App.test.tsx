@@ -32,13 +32,15 @@ test('button should be rendered', () => {
 
 test('username value should be empty', () => {
   render(<Login />);
-  const usernameInputEl: HTMLInputElement = screen.getByPlaceholderText(/username/i);
+  const usernameInputEl: HTMLInputElement =
+    screen.getByPlaceholderText(/username/i);
   expect(usernameInputEl.value).toBe('');
 });
 
 test('password value should be empty', () => {
   render(<Login />);
-  const usernameInputEl: HTMLInputElement = screen.getByPlaceholderText(/username/i);
+  const usernameInputEl: HTMLInputElement =
+    screen.getByPlaceholderText(/username/i);
   expect(usernameInputEl.value).toBe('');
 });
 
@@ -62,7 +64,8 @@ test('error message should not be visible', () => {
 
 test('username input should change', () => {
   render(<Login />);
-  const usernameInputEl: HTMLInputElement = screen.getByPlaceholderText(/username/i);
+  const usernameInputEl: HTMLInputElement =
+    screen.getByPlaceholderText(/username/i);
 
   const testValue = 'test';
 
@@ -73,7 +76,8 @@ test('username input should change', () => {
 
 test('password input should change', () => {
   render(<Login />);
-  const passwordInputEl: HTMLInputElement = screen.getByPlaceholderText(/password/i);
+  const passwordInputEl: HTMLInputElement =
+    screen.getByPlaceholderText(/password/i);
 
   const testValue = 'test';
 
