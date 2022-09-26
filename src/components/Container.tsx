@@ -1,11 +1,7 @@
 type ContainerProps = {
-    styles: React.CSSProperties
-}
+  styles: React.CSSProperties;
+};
 
-export const Container = ({styles}: ContainerProps) => {
-    return (
-        <div style={styles}>
-            Text Content goes here
-        </div>
-    )
-}
+export const Container = ({ styles }: ContainerProps) => {
+  return <div style={styles}>Text Content goes here</div>;
+};
