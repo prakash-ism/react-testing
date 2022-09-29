@@ -3,7 +3,7 @@ import { Profile } from './Profile';
 
 describe('Profile', () => {
   test('should render correctly without props', () => {
-    render(<Profile />);
+    render(<Profile name="" />);
     const divElement = screen.getByRole('profile-desc');
     expect(divElement).toBeInTheDocument();
   });
